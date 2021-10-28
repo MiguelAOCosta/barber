@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
   width: 100%;
-  background-color: #fff;
+  background-color: #f9f3f0;
   padding: 1rem 2rem;
   position: fixed;
 `;
@@ -10,7 +10,7 @@ export const NavbarContainer = styled.nav`
 export const NavbarContent = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #f9f3f0;
   display: flex;
   justify-content: space-between;
   align-items: center;
