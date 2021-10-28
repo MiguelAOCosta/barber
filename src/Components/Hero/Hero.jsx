@@ -7,9 +7,13 @@ import {
   SecondSectio,
   InfoCut,
   CutImg,
+  Img,
   CutPrice,
   CutType,
 } from "./HeroStyles";
+import ImgTesoura from "../../Images/tesoura.svg";
+import ImgNavalha from "../../Images/navalha.svg";
+import ImgTesouraNavalha from "../../Images/tesoura-navalha.svg";
 
 const Hero = () => {
   return (
@@ -20,17 +24,23 @@ const Hero = () => {
       </FirstSection>
       <SecondSectio>
         <InfoCut>
-          <CutImg>1</CutImg>
+          <CutImg>
+            <Img src={ImgTesoura} />
+          </CutImg>
           <CutPrice>15€</CutPrice>
           <CutType>Cabelo</CutType>
         </InfoCut>
         <InfoCut>
-          <CutImg>2</CutImg>
+          <CutImg>
+            <Img src={ImgNavalha} />
+          </CutImg>
           <CutPrice>10€</CutPrice>
           <CutType>Barba</CutType>
         </InfoCut>
         <InfoCut>
-          <CutImg>3</CutImg>
+          <CutImg>
+            <Img src={ImgTesouraNavalha} />
+          </CutImg>
           <CutPrice>20€</CutPrice>
           <CutType>Cabelo e barba</CutType>
         </InfoCut>

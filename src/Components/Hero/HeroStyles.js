@@ -6,6 +6,7 @@ export const HeroContainer = styled.div`
   padding: 1rem 2rem;
   background-color: #f9f3f0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -50,6 +51,11 @@ export const CutImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const Img = styled.img`
+  width: 25px;
+  height: 25px;
 `;
 
 export const CutPrice = styled.p`
