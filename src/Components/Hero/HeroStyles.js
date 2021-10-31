@@ -60,7 +60,7 @@ export const SecondSectio = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 2rem;
+  padding-top: 1rem;
 `;
 
 export const InfoCut = styled.div`
