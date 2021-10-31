@@ -4,6 +4,8 @@ import {
   FirstSection,
   HeroTitle,
   HeroBtn,
+  DesktopSection,
+  DesktopImg,
   SecondSectio,
   InfoCut,
   CutImg,
@@ -14,6 +16,7 @@ import {
 import ImgTesoura from "../../Images/tesoura.svg";
 import ImgNavalha from "../../Images/navalha.svg";
 import ImgTesouraNavalha from "../../Images/tesoura-navalha.svg";
+import bgBarber from "../../Images/barber.png";
 
 const Hero = () => {
   return (
@@ -22,6 +25,9 @@ const Hero = () => {
         <HeroTitle>Um passo mais próximo dos teus sonhos</HeroTitle>
         <HeroBtn>Agendar Corte</HeroBtn>
       </FirstSection>
+      <DesktopSection>
+        <DesktopImg src={bgBarber} />
+      </DesktopSection>
       <SecondSectio>
         <InfoCut>
           <CutImg>

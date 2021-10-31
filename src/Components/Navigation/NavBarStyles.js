@@ -5,6 +5,7 @@ export const NavbarContainer = styled.nav`
   background-color: #f9f3f0;
   padding: 1rem 2rem;
   position: fixed;
+  z-index: 100;
 `;
 
 export const NavbarContent = styled.div`

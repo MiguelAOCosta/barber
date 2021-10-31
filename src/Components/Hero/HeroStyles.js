@@ -8,6 +8,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 `;
 
 export const FirstSection = styled.div`
@@ -16,7 +17,7 @@ export const FirstSection = styled.div`
 `;
 
 export const HeroTitle = styled.h2`
-  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-size: clamp(1.2rem, 3vw, 3rem);
   margin-bottom: 1rem;
 `;
 
@@ -29,12 +30,32 @@ export const HeroBtn = styled.div`
   background-color: #f2c533;
 `;
 
+export const DesktopSection = styled.div`
+  height: calc(100% - 2rem);
+  width: 500px;
+  position: relative;
+  margin-top: 4rem;
+
+  @media screen and (max-width: 650px) {
+    display: none;
+  } ;
+`;
+
+export const DesktopImg = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: -50px;
+  bottom: 0;
+`;
+
 export const SecondSectio = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 1rem;
+  padding-top: 2rem;
 `;
 
 export const InfoCut = styled.div`
@@ -44,8 +65,8 @@ export const InfoCut = styled.div`
 `;
 
 export const CutImg = styled.div`
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #fedbbf;
   display: flex;
@@ -54,17 +75,17 @@ export const CutImg = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 `;
 
 export const CutPrice = styled.p`
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 0.3rem;
 `;
 
 export const CutType = styled.p`
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 `;
