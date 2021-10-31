@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  position: relative;
 `;
 
 export const FirstSection = styled.div`
