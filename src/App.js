@@ -1,6 +1,7 @@
 import GlobalStyle from "./GlobalStyles";
 import Navbar from "./Components/Navigation/NavBar";
 import Hero from "./Components/Hero/Hero";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Hero />
-      <div style={{ height: "400vh", backgroundColor: "green" }}></div>
+      <About />
     </>
   );
 }

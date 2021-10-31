@@ -12,6 +12,7 @@ import {
   Img,
   CutPrice,
   CutType,
+  SeparationContainer,
 } from "./HeroStyles";
 import ImgTesoura from "../../Images/tesoura.svg";
 import ImgNavalha from "../../Images/navalha.svg";
@@ -51,6 +52,7 @@ const Hero = () => {
           <CutType>Cabelo e barba</CutType>
         </InfoCut>
       </SecondSectio>
+      <SeparationContainer />
     </HeroContainer>
   );
 };

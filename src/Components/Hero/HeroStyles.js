@@ -94,3 +94,12 @@ export const CutType = styled.p`
   text-align: center;
   font-size: 0.8rem;
 `;
+
+export const SeparationContainer = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgb(21, 21, 21), transparent);
+`;
