@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/barber/static/js/main.f7b24c16.chunk.js",
-    "main.js.map": "/barber/static/js/main.f7b24c16.chunk.js.map",
+    "main.js": "/barber/static/js/main.f8e757f5.chunk.js",
+    "main.js.map": "/barber/static/js/main.f8e757f5.chunk.js.map",
     "runtime-main.js": "/barber/static/js/runtime-main.8ff04080.js",
     "runtime-main.js.map": "/barber/static/js/runtime-main.8ff04080.js.map",
     "static/js/2.3381f4fa.chunk.js": "/barber/static/js/2.3381f4fa.chunk.js",
     "static/js/2.3381f4fa.chunk.js.map": "/barber/static/js/2.3381f4fa.chunk.js.map",
     "index.html": "/barber/index.html",
     "static/js/2.3381f4fa.chunk.js.LICENSE.txt": "/barber/static/js/2.3381f4fa.chunk.js.LICENSE.txt",
+    "static/media/barber.b86d92a0.png": "/barber/static/media/barber.b86d92a0.png",
     "static/media/navalha.7e5de9ca.svg": "/barber/static/media/navalha.7e5de9ca.svg",
     "static/media/tesoura-navalha.674ef2a5.svg": "/barber/static/media/tesoura-navalha.674ef2a5.svg",
     "static/media/tesoura.78517f34.svg": "/barber/static/media/tesoura.78517f34.svg"
@@ -15,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.8ff04080.js",
     "static/js/2.3381f4fa.chunk.js",
-    "static/js/main.f7b24c16.chunk.js"
+    "static/js/main.f8e757f5.chunk.js"
   ]
 }
