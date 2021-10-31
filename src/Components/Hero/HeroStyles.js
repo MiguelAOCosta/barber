@@ -17,7 +17,7 @@ export const FirstSection = styled.div`
 `;
 
 export const HeroTitle = styled.h2`
-  font-size: clamp(1.2rem, 3vw, 3rem);
+  font-size: clamp(1.2rem, 5vw, 5rem);
   margin-bottom: 1rem;
 `;
 
@@ -28,15 +28,21 @@ export const HeroBtn = styled.div`
   cursor: pointer;
   font-weight: 700;
   background-color: #f2c533;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 export const DesktopSection = styled.div`
   height: calc(100% - 2rem);
-  width: 500px;
+  width: 700px;
   position: relative;
   margin-top: 4rem;
+  margin-right: 7rem;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 750px) {
     display: none;
   } ;
 `;
@@ -45,9 +51,8 @@ export const DesktopImg = styled.img`
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  left: -50px;
-  bottom: 0;
+  object-fit: initial;
+  bottom: 0px;
 `;
 
 export const SecondSectio = styled.div`
