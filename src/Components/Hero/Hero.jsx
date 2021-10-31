@@ -23,7 +23,7 @@ const Hero = () => {
     <HeroContainer>
       <FirstSection>
         <HeroTitle>Um passo mais próximo dos teus sonhos</HeroTitle>
-        <HeroBtn> Corte</HeroBtn>
+        <HeroBtn>Agendar Corte</HeroBtn>
       </FirstSection>
       <DesktopSection>
         <DesktopImg src={bgBarber} />
