@@ -10,7 +10,7 @@ export const DropContainer = styled.div`
   justify-content: space-around;
   z-index: 99;
   position: absolute;
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-150%")};
   transition: all 0.2s ease-in-out;
 `;
 
