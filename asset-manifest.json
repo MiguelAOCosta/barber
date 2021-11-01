@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.js": "/barber/static/js/main.94382908.chunk.js",
-    "main.js.map": "/barber/static/js/main.94382908.chunk.js.map",
+    "main.js": "/barber/static/js/main.b80b3b11.chunk.js",
+    "main.js.map": "/barber/static/js/main.b80b3b11.chunk.js.map",
     "runtime-main.js": "/barber/static/js/runtime-main.8ff04080.js",
     "runtime-main.js.map": "/barber/static/js/runtime-main.8ff04080.js.map",
-    "static/js/2.3381f4fa.chunk.js": "/barber/static/js/2.3381f4fa.chunk.js",
-    "static/js/2.3381f4fa.chunk.js.map": "/barber/static/js/2.3381f4fa.chunk.js.map",
+    "static/js/2.2c9231d6.chunk.js": "/barber/static/js/2.2c9231d6.chunk.js",
+    "static/js/2.2c9231d6.chunk.js.map": "/barber/static/js/2.2c9231d6.chunk.js.map",
     "index.html": "/barber/index.html",
-    "static/js/2.3381f4fa.chunk.js.LICENSE.txt": "/barber/static/js/2.3381f4fa.chunk.js.LICENSE.txt",
-    "static/media/barber-about.e2c7512c.png": "/barber/static/media/barber-about.e2c7512c.png",
-    "static/media/barber.b86d92a0.png": "/barber/static/media/barber.b86d92a0.png",
-    "static/media/navalha.7e5de9ca.svg": "/barber/static/media/navalha.7e5de9ca.svg",
-    "static/media/tesoura-navalha.674ef2a5.svg": "/barber/static/media/tesoura-navalha.674ef2a5.svg",
-    "static/media/tesoura.78517f34.svg": "/barber/static/media/tesoura.78517f34.svg"
+    "static/js/2.2c9231d6.chunk.js.LICENSE.txt": "/barber/static/js/2.2c9231d6.chunk.js.LICENSE.txt",
+    "static/media/title.5672ae6c.svg": "/barber/static/media/title.5672ae6c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8ff04080.js",
-    "static/js/2.3381f4fa.chunk.js",
-    "static/js/main.94382908.chunk.js"
+    "static/js/2.2c9231d6.chunk.js",
+    "static/js/main.b80b3b11.chunk.js"
   ]
 }
