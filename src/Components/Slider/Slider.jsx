@@ -30,7 +30,7 @@ const Slider = () => {
             key={index}
             style={{
               backgroundImage: `url(${image.img})`,
-              transform: index == 0 ? `translateX(-${CurrentSlide * 100}%)` : undefined,
+              marginLeft: index == 0 ? `-${CurrentSlide * 100}%` : undefined,
             }}
           ></Slide>
         );
