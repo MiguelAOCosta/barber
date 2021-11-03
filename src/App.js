@@ -2,6 +2,7 @@ import { useState } from "react";
 import Drop from "./Components/DropDownNav/Drop";
 import Info from "./Components/Info/Info";
 import Nav from "./Components/Navigation/Nav";
+import Slider from "./Components/Slider/Slider";
 import GlobalStyle from "./GlobalStyles";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Info />
       <Nav isOpen={isOpen} toogle={toogle} />
       <Drop isOpen={isOpen} toogle={toogle} />
+      <Slider />
     </>
   );
 }

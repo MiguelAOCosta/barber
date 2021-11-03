@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   width: 100%;
-  padding: 0.5rem 2rem;
+  height: 55px;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
