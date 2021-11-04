@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/barber/static/js/main.4e477806.chunk.js",
-    "main.js.map": "/barber/static/js/main.4e477806.chunk.js.map",
+    "main.js": "/barber/static/js/main.a7430b9b.chunk.js",
+    "main.js.map": "/barber/static/js/main.a7430b9b.chunk.js.map",
     "runtime-main.js": "/barber/static/js/runtime-main.8ff04080.js",
     "runtime-main.js.map": "/barber/static/js/runtime-main.8ff04080.js.map",
     "static/js/2.5c6c4bd9.chunk.js": "/barber/static/js/2.5c6c4bd9.chunk.js",
     "static/js/2.5c6c4bd9.chunk.js.map": "/barber/static/js/2.5c6c4bd9.chunk.js.map",
     "index.html": "/barber/index.html",
     "static/js/2.5c6c4bd9.chunk.js.LICENSE.txt": "/barber/static/js/2.5c6c4bd9.chunk.js.LICENSE.txt",
-    "static/media/2index.444e97ea.jpg": "/barber/static/media/2index.444e97ea.jpg",
+    "static/media/barber-about.e2c7512c.png": "/barber/static/media/barber-about.e2c7512c.png",
     "static/media/title.5672ae6c.svg": "/barber/static/media/title.5672ae6c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8ff04080.js",
     "static/js/2.5c6c4bd9.chunk.js",
-    "static/js/main.4e477806.chunk.js"
+    "static/js/main.a7430b9b.chunk.js"
   ]
 }
