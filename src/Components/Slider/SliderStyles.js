@@ -6,7 +6,6 @@ export const SliderContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  position: relative;
 
   @media screen and (max-width: 800px) {
     height: 100vh;

@@ -1,4 +1,4 @@
-import img1 from "../../Images/index3.jpg";
+import img1 from "../../Images/index.jpg";
 
 export const ImgSlider = [
   { img: img1 },
