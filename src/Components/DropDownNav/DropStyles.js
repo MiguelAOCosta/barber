@@ -3,14 +3,13 @@ import styled from "styled-components";
 export const DropContainer = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #adadad;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   z-index: 99;
   position: absolute;
-  /* top: ${({ isOpen }) => (isOpen ? "0" : "-150%")}; */
   top: 0%;
   transform: scaleY(${({ isOpen }) => (isOpen ? "1" : "0")});
   transform-origin: top;

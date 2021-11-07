@@ -1,4 +1,5 @@
 import { useState } from "react";
+import About from "./Components/About/About";
 import Drop from "./Components/DropDownNav/Drop";
 import Info from "./Components/Info/Info";
 import Nav from "./Components/Navigation/Nav";
@@ -18,6 +19,7 @@ function App() {
       <Nav isOpen={isOpen} toogle={toogle} />
       <Drop isOpen={isOpen} toogle={toogle} />
       <Slider />
+      <About />
     </>
   );
 }
