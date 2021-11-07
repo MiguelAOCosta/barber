@@ -44,8 +44,22 @@ export const SlideBtn = styled.div`
   pointer-events: all;
   transition: all 0.2s ease-in-out;
 
-  &:hover {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #974f31;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+    transform-origin: left;
     opacity: 0.8;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 `;
