@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const AppSlider = styled.div`
+  position: relative;
+`;
 
 export const Slide = styled.div`
   position: relative;
@@ -62,4 +66,28 @@ export const SlideBtn = styled.div`
   &:hover::after {
     transform: scaleX(1);
   }
+`;
+
+const AnimateHand = keyframes`
+  0% {
+    transform: translateX(50%);
+  }
+  10% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+`;
+
+export const Hand = styled.div`
+  position: absolute;
+  bottom: 30px;
+  right: 5%;
+  color: #fff;
+  font-size: 1.2rem;
+  animation: ${AnimateHand} 2s infinite;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 98;
 `;
