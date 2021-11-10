@@ -8,7 +8,7 @@ export const NavContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  position: ${({ isOpen }) => (isOpen ? "fixed" : "absolute")};
   z-index: 100;
   transition: all 0.2s ease-in-out 0.1s;
 `;

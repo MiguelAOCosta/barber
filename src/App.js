@@ -3,6 +3,7 @@ import About from "./Components/About/About";
 import Drop from "./Components/DropDownNav/Drop";
 import Info from "./Components/Info/Info";
 import Nav from "./Components/Navigation/Nav";
+import Services from "./Components/OurServices/Services";
 import Slider from "./Components/Slider/Slider";
 import GlobalStyle from "./GlobalStyles";
 
@@ -20,6 +21,7 @@ function App() {
       <Drop isOpen={isOpen} toogle={toogle} />
       <Slider />
       <About />
+      <Services />
     </>
   );
 }

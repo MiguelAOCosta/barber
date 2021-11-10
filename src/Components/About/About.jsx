@@ -1,16 +1,17 @@
 import React from "react";
 import {
-  AboutSection,
-  AboutTitle,
+  Section,
+  SectionTitle,
   Title,
   TitleStyle,
   ImgTitle,
-  AboutParagraph,
+  SectionParagraph,
+} from "../../GlobalStyles";
+import {
   Achievements,
   Achievement,
   AchievementImg,
   ImgAchieve,
-  InfoAchievement,
   AchievementTitle,
   AchievementParagraph,
 } from "./AboutStyles";
@@ -21,19 +22,19 @@ import TesouraNavalha from "../../Images/tesoura-navalha.svg";
 
 const About = () => {
   return (
-    <AboutSection>
-      <AboutTitle>
+    <Section>
+      <SectionTitle>
         <Title>Sobre mim</Title>
         <TitleStyle>
           <ImgTitle src={LogoImg} />
         </TitleStyle>
 
-        <AboutParagraph>
+        <SectionParagraph>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui officiis
           quos quidem quisquam eligendi sed nihil porro earum accusantium
           dolorum?
-        </AboutParagraph>
-      </AboutTitle>
+        </SectionParagraph>
+      </SectionTitle>
 
       <Achievements>
         <Achievement>
@@ -75,7 +76,7 @@ const About = () => {
           </AchievementParagraph>
         </Achievement>
       </Achievements>
-    </AboutSection>
+    </Section>
   );
 };
 

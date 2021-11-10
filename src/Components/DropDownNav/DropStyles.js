@@ -9,7 +9,7 @@ export const DropContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   z-index: 99;
-  position: absolute;
+  position: fixed;
   top: 0%;
   transform: scaleY(${({ isOpen }) => (isOpen ? "1" : "0")});
   transform-origin: top;
