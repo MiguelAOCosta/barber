@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/barber/static/js/main.b2738c63.chunk.js",
-    "main.js.map": "/barber/static/js/main.b2738c63.chunk.js.map",
+    "main.js": "/barber/static/js/main.bfbb793d.chunk.js",
+    "main.js.map": "/barber/static/js/main.bfbb793d.chunk.js.map",
     "runtime-main.js": "/barber/static/js/runtime-main.8ff04080.js",
     "runtime-main.js.map": "/barber/static/js/runtime-main.8ff04080.js.map",
     "static/css/2.0afc5161.chunk.css": "/barber/static/css/2.0afc5161.chunk.css",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.8ff04080.js",
     "static/css/2.0afc5161.chunk.css",
     "static/js/2.56cc43ee.chunk.js",
-    "static/js/main.b2738c63.chunk.js"
+    "static/js/main.bfbb793d.chunk.js"
   ]
 }
