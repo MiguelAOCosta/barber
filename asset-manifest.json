@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/barber/static/js/main.bfbb793d.chunk.js",
-    "main.js.map": "/barber/static/js/main.bfbb793d.chunk.js.map",
+    "main.js": "/barber/static/js/main.05c09a2e.chunk.js",
+    "main.js.map": "/barber/static/js/main.05c09a2e.chunk.js.map",
     "runtime-main.js": "/barber/static/js/runtime-main.8ff04080.js",
     "runtime-main.js.map": "/barber/static/js/runtime-main.8ff04080.js.map",
     "static/css/2.0afc5161.chunk.css": "/barber/static/css/2.0afc5161.chunk.css",
@@ -13,6 +13,7 @@
     "static/media/img1.d6c13d1a.jpg": "/barber/static/media/img1.d6c13d1a.jpg",
     "static/media/img2.23a2dcbf.jpg": "/barber/static/media/img2.23a2dcbf.jpg",
     "static/media/img3.e783ab6d.jpg": "/barber/static/media/img3.e783ab6d.jpg",
+    "static/media/marcacao.e81dcc53.jpg": "/barber/static/media/marcacao.e81dcc53.jpg",
     "static/media/navalha.9fd1d4f8.svg": "/barber/static/media/navalha.9fd1d4f8.svg",
     "static/media/services.e3b828b0.png": "/barber/static/media/services.e3b828b0.png",
     "static/media/tesoura-navalha.3417cd12.svg": "/barber/static/media/tesoura-navalha.3417cd12.svg",
@@ -23,6 +24,6 @@
     "static/js/runtime-main.8ff04080.js",
     "static/css/2.0afc5161.chunk.css",
     "static/js/2.56cc43ee.chunk.js",
-    "static/js/main.bfbb793d.chunk.js"
+    "static/js/main.05c09a2e.chunk.js"
   ]
 }
