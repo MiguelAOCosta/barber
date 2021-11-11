@@ -2,6 +2,7 @@ import { useState } from "react";
 import About from "./Components/About/About";
 import Drop from "./Components/DropDownNav/Drop";
 import Info from "./Components/Info/Info";
+import Marcacao from "./Components/Marcacao/Marcacao";
 import Nav from "./Components/Navigation/Nav";
 import Services from "./Components/OurServices/Services";
 import Slider from "./Components/Slider/Slider";
@@ -22,6 +23,7 @@ function App() {
       <Slider />
       <About />
       <Services />
+      <Marcacao />
     </>
   );
 }
