@@ -5,6 +5,11 @@ const GlobalStyle = createGlobalStyle`
         --swiper-theme-color: #974f31;
     }
 
+    ::selection {
+      color: #fff;
+      background: rgba(151, 79, 49, 0.8);
+    }
+
     *{
         margin: 0;
         padding: 0;
