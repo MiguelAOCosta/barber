@@ -27,6 +27,7 @@ export const SliderTextContainer = styled.div`
 `;
 
 export const SliderContent = styled.div`
+  padding: 0 0.5rem;
   height: 100vh;
   text-align: center;
   display: flex;
