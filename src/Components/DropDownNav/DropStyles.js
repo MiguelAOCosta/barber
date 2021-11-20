@@ -18,13 +18,13 @@ export const DropContainer = styled.div`
 
 export const NavBar = styled.ul`
   width: 100%;
-  height: 100%;
+  height: calc(100% - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  padding-top: 30px;
+  padding-top: 40px;
 `;
 
 export const NavLink = styled.li`

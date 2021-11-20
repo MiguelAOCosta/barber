@@ -24,6 +24,8 @@ const Nav = ({ isOpen, toogle }) => {
         <NavBar>
           <NavLink>Sobre Mim</NavLink>
           <NavLink>Serviços</NavLink>
+          <NavLink>Barbeiros</NavLink>
+          <NavLink>Galeria</NavLink>
           <NavLink>Preços</NavLink>
           <NavLink>Contactos</NavLink>
         </NavBar>

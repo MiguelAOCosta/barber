@@ -7,6 +7,8 @@ const Drop = ({ isOpen, toogle }) => {
       <NavBar>
         <NavLink onClick={toogle}>Sobre Mim</NavLink>
         <NavLink onClick={toogle}>Serviços</NavLink>
+        <NavLink onClick={toogle}>Barbeiros</NavLink>
+        <NavLink onClick={toogle}>Galeria</NavLink>
         <NavLink onClick={toogle}>Preços</NavLink>
         <NavLink onClick={toogle}>Contactos</NavLink>
       </NavBar>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import About from "./Components/About/About";
+import Barbers from "./Components/Barbers/Barbers";
 import Drop from "./Components/DropDownNav/Drop";
 import Info from "./Components/Info/Info";
 import Marcacao from "./Components/Marcacao/Marcacao";
@@ -24,7 +25,7 @@ function App() {
       <About />
       <Services />
       <Marcacao />
-      <div style={{ height: "100vh" }}></div>
+      <Barbers />
     </>
   );
 }
