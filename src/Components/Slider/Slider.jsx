@@ -7,7 +7,6 @@ import { ImgSlider } from "./SliderData";
 import "swiper/swiper.scss";
 import "swiper/modules/navigation/navigation.scss";
 import "swiper/modules/pagination/pagination.scss";
-import "swiper/modules/scrollbar/scrollbar.scss";
 
 const Slider = () => {
   return (

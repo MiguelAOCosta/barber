@@ -7,6 +7,7 @@ import Marcacao from "./Components/Marcacao/Marcacao";
 import Nav from "./Components/Navigation/Nav";
 import Services from "./Components/OurServices/Services";
 import Slider from "./Components/Slider/Slider";
+import SliderText from "./Components/SliderText/SliderText";
 import GlobalStyle from "./GlobalStyles";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Services />
       <Marcacao />
       <Barbers />
+      <SliderText />
     </>
   );
 }

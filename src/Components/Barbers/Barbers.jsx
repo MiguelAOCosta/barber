@@ -16,7 +16,8 @@ import {
   BarberLevel,
 } from "./BarbersStyles";
 import LogoImg from "../../Images/title.svg";
-import BarberImg from "../../Images/barber.jpg";
+import BarberImg1 from "../../Images/barber1.jpg";
+import BarberImg2 from "../../Images/barber2.jpg";
 
 const Barbers = () => {
   return (
@@ -36,7 +37,7 @@ const Barbers = () => {
 
       <BarberSection>
         <Barber>
-          <ImgBarber src={BarberImg} />
+          <ImgBarber src={BarberImg1} />
           <BarberInfo>
             <BarberName>Miguel Costa</BarberName>
             <BarberLevel>Fundador</BarberLevel>
@@ -44,7 +45,7 @@ const Barbers = () => {
         </Barber>
 
         <Barber>
-          <ImgBarber src={BarberImg} />
+          <ImgBarber src={BarberImg2} />
           <BarberInfo>
             <BarberName>Miguel Costa</BarberName>
             <BarberLevel>Fundador</BarberLevel>
