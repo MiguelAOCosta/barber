@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/barber/static/js/main.13ff4d8c.chunk.js",
-    "main.js.map": "/barber/static/js/main.13ff4d8c.chunk.js.map",
+    "main.js": "/barber/static/js/main.e06d0a51.chunk.js",
+    "main.js.map": "/barber/static/js/main.e06d0a51.chunk.js.map",
     "runtime-main.js": "/barber/static/js/runtime-main.8ff04080.js",
     "runtime-main.js.map": "/barber/static/js/runtime-main.8ff04080.js.map",
     "static/css/2.0afc5161.chunk.css": "/barber/static/css/2.0afc5161.chunk.css",
-    "static/js/2.18bec71c.chunk.js": "/barber/static/js/2.18bec71c.chunk.js",
-    "static/js/2.18bec71c.chunk.js.map": "/barber/static/js/2.18bec71c.chunk.js.map",
+    "static/js/2.7c0f9dab.chunk.js": "/barber/static/js/2.7c0f9dab.chunk.js",
+    "static/js/2.7c0f9dab.chunk.js.map": "/barber/static/js/2.7c0f9dab.chunk.js.map",
     "index.html": "/barber/index.html",
     "static/css/2.0afc5161.chunk.css.map": "/barber/static/css/2.0afc5161.chunk.css.map",
-    "static/js/2.18bec71c.chunk.js.LICENSE.txt": "/barber/static/js/2.18bec71c.chunk.js.LICENSE.txt",
+    "static/js/2.7c0f9dab.chunk.js.LICENSE.txt": "/barber/static/js/2.7c0f9dab.chunk.js.LICENSE.txt",
     "static/media/img1.d6c13d1a.jpg": "/barber/static/media/img1.d6c13d1a.jpg",
     "static/media/img2.23a2dcbf.jpg": "/barber/static/media/img2.23a2dcbf.jpg",
     "static/media/img3.e783ab6d.jpg": "/barber/static/media/img3.e783ab6d.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.8ff04080.js",
     "static/css/2.0afc5161.chunk.css",
-    "static/js/2.18bec71c.chunk.js",
-    "static/js/main.13ff4d8c.chunk.js"
+    "static/js/2.7c0f9dab.chunk.js",
+    "static/js/main.e06d0a51.chunk.js"
   ]
 }
