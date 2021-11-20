@@ -31,8 +31,6 @@ const Marcacao = () => {
   const [serviceValue, setServiceValue] = useState();
   const [selectedDate, setselectedDate] = useState(new Date());
 
-  console.log(selectedDate);
-
   return (
     <Section
       onClick={() => (Selected === 1 ? setSelected(0) : undefined)}
@@ -42,7 +40,6 @@ const Marcacao = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        height: "100%",
       }}
     >
       <SectionTitle>

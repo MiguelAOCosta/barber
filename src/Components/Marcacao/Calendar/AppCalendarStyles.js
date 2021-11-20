@@ -5,9 +5,16 @@ export const CalendarContainer = styled.div`
   color: #fff;
 `;
 
+export const MonthInfo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding-bottom: 0.3rem;
+`;
+
 export const Month = styled.h3`
   text-align: center;
-  padding-bottom: 0.3rem;
   text-transform: capitalize;
 `;
 
@@ -26,7 +33,7 @@ export const Week = styled.div`
   text-align: center;
   padding: 0.3rem 0;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `;
 
 export const WeekDay = styled.div`
@@ -40,7 +47,7 @@ export const Day = styled.div`
   text-align: center;
   padding: 0.2rem 0;
   transition: all 0.2s ease-in-out;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 
   &:hover {
     background-color: #333;
