@@ -4,6 +4,7 @@ export const SectionAppointment = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 `;
 
 export const AppointmentForm = styled.form`
@@ -12,7 +13,7 @@ export const AppointmentForm = styled.form`
   grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
   place-content: center;
   grid-gap: 1rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 5rem;
 `;
 
 export const Form = styled.div`
@@ -42,25 +43,32 @@ export const Selectable = styled.div`
 `;
 
 export const InfoSlected = styled.span`
-  color: #999;
+  color: #fff;
 `;
 
 export const Select = styled.div`
   position: absolute;
-  background-color: #f0f0f0;
+  background-color: #212121;
+  border: 1px solid #333;
   padding: 0.5rem;
   z-index: 10;
   width: 100%;
 `;
 
 export const List = styled.ul`
-  color: #333;
+  color: #999;
   list-style: none;
 `;
 
 export const Item = styled.li`
   padding: 0.5rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #974f31;
+    color: #fff;
+  }
 `;
 
 export const BtnForm = styled.button`

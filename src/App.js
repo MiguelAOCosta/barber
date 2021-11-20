@@ -24,6 +24,7 @@ function App() {
       <About />
       <Services />
       <Marcacao />
+      <div style={{ height: "100vh" }}></div>
     </>
   );
 }

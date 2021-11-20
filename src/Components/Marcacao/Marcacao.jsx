@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { format } from "date-fns";
+import AppCalendar from "./Calendar/AppCalendar";
 import {
   Section,
   SectionTitle,
@@ -22,30 +24,25 @@ import {
 import LogoImg from "../../Images/title.svg";
 import BgImg from "../../Images/marcacao.jpg";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { GoCalendar } from "react-icons/go";
 
 const Marcacao = () => {
   const [Selected, setSelected] = useState(0);
-  const toogleSelected = () => {
-    if (Selected === 1) {
-      setSelected(0);
-    } else {
-      setSelected(1);
-    }
-  };
-
   const [serviceValue, setServiceValue] = useState();
+  const [selectedDate, setselectedDate] = useState(new Date());
 
-  console.log(serviceValue);
+  console.log(selectedDate);
 
   return (
     <Section
+      onClick={() => (Selected === 1 ? setSelected(0) : undefined)}
       style={{
         backgroundImage: `url(${BgImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        minHeight: "100vh",
+        height: "100%",
       }}
     >
       <SectionTitle>
@@ -70,8 +67,12 @@ const Marcacao = () => {
             <InputForm type="text" placeholder="Telemóvel" />
           </Form>
           <Form>
-            <Selectable onClick={toogleSelected}>
-              <InfoSlected>
+            <Selectable onClick={() => setSelected(1)}>
+              <InfoSlected
+                style={{
+                  color: `${serviceValue === undefined ? "#999" : "#fff"}`,
+                }}
+              >
                 {serviceValue === undefined ? "Serviço" : serviceValue}
               </InfoSlected>
               <IoMdArrowDropdown
@@ -79,6 +80,7 @@ const Marcacao = () => {
                   color: "#999",
                   width: "20px",
                   height: "20px",
+                  marginRight: "5px",
                   transform: `${
                     Selected === 1 ? "rotate(180deg)" : "rotate(0deg)"
                   }`,
@@ -86,6 +88,7 @@ const Marcacao = () => {
                 }}
               />
             </Selectable>
+
             <Select
               style={{
                 transform: `${Selected === 1 ? "scale(1)" : "scale(0)"}`,
@@ -106,7 +109,32 @@ const Marcacao = () => {
             </Select>
           </Form>
           <Form>
-            <InputForm type="text" placeholder="Data" />
+            <Selectable
+              onClick={() => (Selected === 2 ? setSelected(0) : setSelected(2))}
+            >
+              <InfoSlected>{format(selectedDate, "dd.MM.yyyy")}</InfoSlected>
+              <GoCalendar
+                style={{
+                  color: "#999",
+                  width: "20px",
+                  height: "20px",
+                  marginRight: "5px",
+                }}
+              />
+            </Selectable>
+
+            <Select
+              style={{
+                transform: `${Selected === 2 ? "scale(1)" : "scale(0)"}`,
+                transformOrigin: "top right",
+                transition: "transform 0.2s ease-in-out",
+              }}
+            >
+              <AppCalendar
+                selectedDate={selectedDate}
+                setselectedDate={setselectedDate}
+              />
+            </Select>
           </Form>
           <BtnForm>Fazer Marcação</BtnForm>
         </AppointmentForm>
