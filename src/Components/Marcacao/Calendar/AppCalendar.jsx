@@ -16,8 +16,6 @@ import {
 const AppCalendar = ({ selectedDate, setselectedDate }) => {
   const data = takeMonth(selectedDate)();
 
-  console.log(selectedDate);
-
   function dayColor(day) {
     if (!isSameMonth(day, selectedDate)) return "#999";
 

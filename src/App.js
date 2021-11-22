@@ -2,6 +2,7 @@ import { useState } from "react";
 import About from "./Components/About/About";
 import Barbers from "./Components/Barbers/Barbers";
 import Drop from "./Components/DropDownNav/Drop";
+import Gallery from "./Components/Gallery/Gallery";
 import Info from "./Components/Info/Info";
 import Marcacao from "./Components/Marcacao/Marcacao";
 import Nav from "./Components/Navigation/Nav";
@@ -28,6 +29,7 @@ function App() {
       <Marcacao />
       <Barbers />
       <SliderText />
+      <Gallery />
     </>
   );
 }
