@@ -28,12 +28,21 @@ export const GalleryContainer = styled.div`
   place-items: center;
   place-content: center;
   overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, 150px);
+  }
 `;
 
 export const GalleryContent = styled.div`
   max-width: 250px;
   height: 250px;
   cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    max-width: 150px;
+    height: 150px;
+  }
 `;
 
 export const ImgGallery = styled.img`
