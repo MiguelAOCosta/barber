@@ -30,36 +30,3 @@ export const SlideH1 = styled.h1`
   color: #fff;
   font-size: clamp(2rem, 5vw, 4rem);
 `;
-
-export const SlideBtn = styled.div`
-  position: relative;
-  width: max-content;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-  border: 2px solid #974f31;
-  border-radius: 3px;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 700;
-  pointer-events: all;
-  transition: all 0.2s ease-in-out;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #974f31;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-    transform-origin: left;
-    opacity: 0.8;
-    z-index: -1;
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-  }
-`;

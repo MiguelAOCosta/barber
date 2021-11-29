@@ -1,8 +1,9 @@
 import React from "react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
-import { Slide, SlideContent, SlideP, SlideH1, SlideBtn } from "./SliderStyles";
+import { Slide, SlideContent, SlideP, SlideH1 } from "./SliderStyles";
 import { ImgSlider } from "./SliderData";
+import { SlideBtn } from "../../GlobalStyles";
 
 import "swiper/swiper.scss";
 import "swiper/modules/navigation/navigation.scss";

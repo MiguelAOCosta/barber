@@ -1,7 +1,9 @@
 import { useState } from "react";
 import About from "./Components/About/About";
 import Barbers from "./Components/Barbers/Barbers";
+import Cta from "./Components/Cta/Cta";
 import Drop from "./Components/DropDownNav/Drop";
+import Footer from "./Components/Footer/Footer";
 import Gallery from "./Components/Gallery/Gallery";
 import Info from "./Components/Info/Info";
 import Marcacao from "./Components/Marcacao/Marcacao";
@@ -32,6 +34,8 @@ function App() {
       <SliderText />
       <Gallery />
       <Price />
+      <Cta />
+      <Footer />
     </>
   );
 }
