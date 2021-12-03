@@ -1,6 +1,7 @@
 import { useState } from "react";
 import About from "./Components/About/About";
 import Barbers from "./Components/Barbers/Barbers";
+import Copyright from "./Components/Copyright/Copyright";
 import Cta from "./Components/Cta/Cta";
 import Drop from "./Components/DropDownNav/Drop";
 import Footer from "./Components/Footer/Footer";
@@ -36,6 +37,7 @@ function App() {
       <Price />
       <Cta />
       <Footer />
+      <Copyright />
     </>
   );
 }

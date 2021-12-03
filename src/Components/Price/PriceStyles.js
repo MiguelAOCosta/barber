@@ -46,8 +46,7 @@ export const TypeInfo = styled.p`
     color: #999;
     position: absolute;
     margin-left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0%;
   }
 `;
 
