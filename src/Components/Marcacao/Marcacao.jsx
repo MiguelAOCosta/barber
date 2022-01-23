@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { format } from "date-fns";
-import AppCalendar from "./Calendar/AppCalendar";
+import axios from "axios";
 import {
   Section,
   SectionTitle,
@@ -9,31 +9,75 @@ import {
   ImgTitle,
   SectionParagraph,
 } from "../../GlobalStyles";
-import {
-  SectionAppointment,
-  AppointmentForm,
-  Form,
-  InputForm,
-  Selectable,
-  InfoSlected,
-  Select,
-  List,
-  Item,
-  BtnForm,
-} from "./MarcacaoStyles";
+import { SectionAppointment } from "./MarcacaoStyles";
 import LogoImg from "../../Images/title.svg";
 import BgImg from "../../Images/marcacao.jpg";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { GoCalendar } from "react-icons/go";
+import IndexForm from "./Form/IndexForm";
 
 const Marcacao = () => {
   const [Selected, setSelected] = useState(0);
-  const [serviceValue, setServiceValue] = useState();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [hour, sethour] = useState(0);
   const [selectedDate, setselectedDate] = useState(new Date());
+  const startDate = `${format(selectedDate, "yyyy-MM-dd")}T${hour}:00:00.000Z`;
+  const endDate = `${format(selectedDate, "yyyy-MM-dd")}T${
+    Number(hour) + 1
+  }:00:00.000Z`;
+  const [nameIsValid, setNameIsValid] = useState(false);
+  const [phoneIsValid, setPhoneIsValid] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const checkName = () => {
+    if (name.length < 3) {
+      setNameIsValid(true);
+    } else {
+      setNameIsValid(false);
+    }
+  };
+
+  const checkPhone = () => {
+    if (phone.length < 9) {
+      setPhoneIsValid(true);
+    } else {
+      setPhoneIsValid(false);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    try {
+      if (
+        hour !== null &&
+        hour !== 0 &&
+        name.length >= 3 &&
+        phone.length === 9
+      ) {
+        setLoading(true);
+        axios
+          .post("/api/create-event", { name, phone, startDate, endDate })
+          .then((response) => {
+            console.log(response.data);
+
+            setName("");
+            setPhone("");
+            sethour(0);
+            setLoading(false);
+          })
+          .catch((error) => console.log(error.message));
+      }
+
+      checkName();
+      checkPhone();
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <Section
-      onClick={() => (Selected === 1 ? setSelected(0) : undefined)}
+      onClick={() => (Selected !== 0 ? setSelected(0) : undefined)}
       style={{
         backgroundImage: `url(${BgImg})`,
         backgroundRepeat: "no-repeat",
@@ -56,85 +100,26 @@ const Marcacao = () => {
       </SectionTitle>
 
       <SectionAppointment>
-        <AppointmentForm>
-          <Form>
-            <InputForm type="text" placeholder="Nome" />
-          </Form>
-          <Form>
-            <InputForm type="text" placeholder="Telemóvel" />
-          </Form>
-          <Form>
-            <Selectable onClick={() => setSelected(1)}>
-              <InfoSlected
-                style={{
-                  color: `${serviceValue === undefined ? "#999" : "#fff"}`,
-                }}
-              >
-                {serviceValue === undefined ? "Serviço" : serviceValue}
-              </InfoSlected>
-              <IoMdArrowDropdown
-                style={{
-                  color: "#999",
-                  width: "20px",
-                  height: "20px",
-                  marginRight: "5px",
-                  transform: `${
-                    Selected === 1 ? "rotate(180deg)" : "rotate(0deg)"
-                  }`,
-                  transition: "transform 0.2s ease-in-out",
-                }}
-              />
-            </Selectable>
-
-            <Select
-              style={{
-                transform: `${Selected === 1 ? "scale(1)" : "scale(0)"}`,
-                transformOrigin: "top right",
-                transition: "transform 0.2s ease-in-out",
-              }}
-            >
-              <List
-                onClick={(e) =>
-                  setServiceValue(e.target.getAttribute("data-value"))
-                }
-              >
-                <Item data-value="Corte de cabelo">Corte de cabelo</Item>
-                <Item data-value="Lavagem de cabelo">Lavagem de cabelo</Item>
-                <Item data-value="Hair Styling">Hair Styling</Item>
-                <Item data-value="Corte de Barba">Corte de Barba</Item>
-              </List>
-            </Select>
-          </Form>
-          <Form>
-            <Selectable
-              onClick={() => (Selected === 2 ? setSelected(0) : setSelected(2))}
-            >
-              <InfoSlected>{format(selectedDate, "dd.MM.yyyy")}</InfoSlected>
-              <GoCalendar
-                style={{
-                  color: "#999",
-                  width: "20px",
-                  height: "20px",
-                  marginRight: "5px",
-                }}
-              />
-            </Selectable>
-
-            <Select
-              style={{
-                transform: `${Selected === 2 ? "scale(1)" : "scale(0)"}`,
-                transformOrigin: "top right",
-                transition: "transform 0.2s ease-in-out",
-              }}
-            >
-              <AppCalendar
-                selectedDate={selectedDate}
-                setselectedDate={setselectedDate}
-              />
-            </Select>
-          </Form>
-          <BtnForm>Fazer Marcação</BtnForm>
-        </AppointmentForm>
+        <IndexForm
+          Selected={Selected}
+          setSelected={setSelected}
+          name={name}
+          setName={setName}
+          phone={phone}
+          setPhone={setPhone}
+          hour={hour}
+          sethour={sethour}
+          selectedDate={selectedDate}
+          setselectedDate={setselectedDate}
+          nameIsValid={nameIsValid}
+          setNameIsValid={setNameIsValid}
+          phoneIsValid={phoneIsValid}
+          setPhoneIsValid={setPhoneIsValid}
+          checkName={checkName}
+          checkPhone={checkPhone}
+          handleSubmit={handleSubmit}
+          loading={loading}
+        />
       </SectionAppointment>
     </Section>
   );
